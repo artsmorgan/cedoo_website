@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="shortcut icon" href="ico/favicon.png"> -->
+
+    <title>Software de gestión y administración de centros educativos</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom bootstrap styles -->
+    <link href="css/overwrite.css" rel="stylesheet">
+
+	<!-- Font -->
+	<link href="fonts/open-sans/stylesheet.css" rel="stylesheet">
+	
+	<!-- Font icons -->
+	<link href="css/font-awesome.css" rel="stylesheet">
+    <link href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+	<link href="fonts/pe-icon-7-stroke/css/helper.css" rel="stylesheet">
+	
+	<!-- Animate css -->
+    <link href="css/animate.css" rel="stylesheet">	
+	
+	<!-- prettyPhoto -->	
+	<link href="css/prettyPhoto.css" rel="stylesheet" />
+	
+    <!-- flexslider -->	
+	<link href="css/flexslider.css" rel="stylesheet">
+
+	<!-- Owl carousel -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="css/owl.transitions.css" rel="stylesheet">
+	
+	<!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+	<!-- Theme skin -->
+	<link href="skins/default.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+  	<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<form>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Solicitar Demo</h4>
+      </div>
+      <div class="modal-body">
+        
+		  <div class="form-group">
+		    <label for="nombre">Nombre</label>
+		    <input type="text" 
+		    	class="form-control" id="nombre_completo" 
+		    	placeholder="Nombre" name="nombre"
+		    	required="true" 
+		    />
+		  </div>
+		  <div class="form-group">
+		    <label for="apellidos">Apellidos</label>
+		    <input type="text" 
+		    	class="form-control" id="nombre_completo" 
+		    	placeholder="Apellidos" name="apellidos"
+		    	required="true" 
+		    />
+		  </div>
+		  <div class="form-group">
+		    <label for="email">Correo Electrónico</label>
+		    <input type="email" 
+		    	class="form-control" id="email" 
+		    	placeholder="Correo Electrónico" name="email"
+		    	required="true" 
+		    />
+		  </div>
+		  <div class="form-group">
+		    <label for="telefono">Teléfono</label>
+		    <input type="text" 
+		    	class="form-control" id="telefono" 
+		    	placeholder="Teléfono" name="telefono"
+		    	required="true" 
+		    />
+		  </div>
+		  <div class="form-group">
+		    <label for="centro_edu">Centro Educativo</label>
+		    <input type="text" 
+		    	class="form-control" id="centro_edu" 
+		    	placeholder="Centro Educativo" name="centro_edu"
+		    	required="true" 
+		    />
+		  </div>
+		  <div class="form-group">
+		    <label for="puesto">Puesto</label>
+		    <input type="text" 
+		    	class="form-control" id="puesto" 
+		    	placeholder="Puesto" name="puesto"
+		    	required="true" 
+		    />
+		  </div>
+
+		  <div class="form-group">
+		    <label for="puesto">Pais</label>
+		    <select>
+				<option value="AF">Afghanistan</option>
+				<option value="AX">Åland Islands</option>
+				<option value="AL">Albania</option>
+				<option value="DZ">Algeria</option>
+				<option value="AS">American Samoa</option>
+				<option value="AD">Andorra</option>
+				<option value="AO">Angola</option>
+				<option value="AI">Anguilla</option>
+				<option value="AQ">Antarctica</option>
+				<option value="AG">Antigua and Barbuda</option>
+				<option value="AR">Argentina</option>
+				<option value="AM">Armenia</option>
+				<option value="AW">Aruba</option>
+				<option value="AU">Australia</option>
+				<option value="AT">Austria</option>
+				<option value="AZ">Azerbaijan</option>
+				<option value="BS">Bahamas</option>
+				<option value="BH">Bahrain</option>
+				<option value="BD">Bangladesh</option>
+				<option value="BB">Barbados</option>
+				<option value="BY">Belarus</option>
+				<option value="BE">Belgium</option>
+				<option value="BZ">Belize</option>
+				<option value="BJ">Benin</option>
+				<option value="BM">Bermuda</option>
+				<option value="BT">Bhutan</option>
+				<option value="BO">Bolivia, Plurinational State of</option>
+				<option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+				<option value="BA">Bosnia and Herzegovina</option>
+				<option value="BW">Botswana</option>
+				<option value="BV">Bouvet Island</option>
+				<option value="BR">Brazil</option>
+				<option value="IO">British Indian Ocean Territory</option>
+				<option value="BN">Brunei Darussalam</option>
+				<option value="BG">Bulgaria</option>
+				<option value="BF">Burkina Faso</option>
+				<option value="BI">Burundi</option>
+				<option value="KH">Cambodia</option>
+				<option value="CM">Cameroon</option>
+				<option value="CA">Canada</option>
+				<option value="CV">Cape Verde</option>
+				<option value="KY">Cayman Islands</option>
+				<option value="CF">Central African Republic</option>
+				<option value="TD">Chad</option>
+				<option value="CL">Chile</option>
+				<option value="CN">China</option>
+				<option value="CX">Christmas Island</option>
+				<option value="CC">Cocos (Keeling) Islands</option>
+				<option value="CO">Colombia</option>
+				<option value="KM">Comoros</option>
+				<option value="CG">Congo</option>
+				<option value="CD">Congo, the Democratic Republic of the</option>
+				<option value="CK">Cook Islands</option>
+				<option value="CR">Costa Rica</option>
+				<option value="CI">Côte d'Ivoire</option>
+				<option value="HR">Croatia</option>
+				<option value="CU">Cuba</option>
+				<option value="CW">Curaçao</option>
+				<option value="CY">Cyprus</option>
+				<option value="CZ">Czech Republic</option>
+				<option value="DK">Denmark</option>
+				<option value="DJ">Djibouti</option>
+				<option value="DM">Dominica</option>
+				<option value="DO">Dominican Republic</option>
+				<option value="EC">Ecuador</option>
+				<option value="EG">Egypt</option>
+				<option value="SV">El Salvador</option>
+				<option value="GQ">Equatorial Guinea</option>
+				<option value="ER">Eritrea</option>
+				<option value="EE">Estonia</option>
+				<option value="ET">Ethiopia</option>
+				<option value="FK">Falkland Islands (Malvinas)</option>
+				<option value="FO">Faroe Islands</option>
+				<option value="FJ">Fiji</option>
+				<option value="FI">Finland</option>
+				<option value="FR">France</option>
+				<option value="GF">French Guiana</option>
+				<option value="PF">French Polynesia</option>
+				<option value="TF">French Southern Territories</option>
+				<option value="GA">Gabon</option>
+				<option value="GM">Gambia</option>
+				<option value="GE">Georgia</option>
+				<option value="DE">Germany</option>
+				<option value="GH">Ghana</option>
+				<option value="GI">Gibraltar</option>
+				<option value="GR">Greece</option>
+				<option value="GL">Greenland</option>
+				<option value="GD">Grenada</option>
+				<option value="GP">Guadeloupe</option>
+				<option value="GU">Guam</option>
+				<option value="GT">Guatemala</option>
+				<option value="GG">Guernsey</option>
+				<option value="GN">Guinea</option>
+				<option value="GW">Guinea-Bissau</option>
+				<option value="GY">Guyana</option>
+				<option value="HT">Haiti</option>
+				<option value="HM">Heard Island and McDonald Islands</option>
+				<option value="VA">Holy See (Vatican City State)</option>
+				<option value="HN">Honduras</option>
+				<option value="HK">Hong Kong</option>
+				<option value="HU">Hungary</option>
+				<option value="IS">Iceland</option>
+				<option value="IN">India</option>
+				<option value="ID">Indonesia</option>
+				<option value="IR">Iran, Islamic Republic of</option>
+				<option value="IQ">Iraq</option>
+				<option value="IE">Ireland</option>
+				<option value="IM">Isle of Man</option>
+				<option value="IL">Israel</option>
+				<option value="IT">Italy</option>
+				<option value="JM">Jamaica</option>
+				<option value="JP">Japan</option>
+				<option value="JE">Jersey</option>
+				<option value="JO">Jordan</option>
+				<option value="KZ">Kazakhstan</option>
+				<option value="KE">Kenya</option>
+				<option value="KI">Kiribati</option>
+				<option value="KP">Korea, Democratic People's Republic of</option>
+				<option value="KR">Korea, Republic of</option>
+				<option value="KW">Kuwait</option>
+				<option value="KG">Kyrgyzstan</option>
+				<option value="LA">Lao People's Democratic Republic</option>
+				<option value="LV">Latvia</option>
+				<option value="LB">Lebanon</option>
+				<option value="LS">Lesotho</option>
+				<option value="LR">Liberia</option>
+				<option value="LY">Libya</option>
+				<option value="LI">Liechtenstein</option>
+				<option value="LT">Lithuania</option>
+				<option value="LU">Luxembourg</option>
+				<option value="MO">Macao</option>
+				<option value="MK">Macedonia, the former Yugoslav Republic of</option>
+				<option value="MG">Madagascar</option>
+				<option value="MW">Malawi</option>
+				<option value="MY">Malaysia</option>
+				<option value="MV">Maldives</option>
+				<option value="ML">Mali</option>
+				<option value="MT">Malta</option>
+				<option value="MH">Marshall Islands</option>
+				<option value="MQ">Martinique</option>
+				<option value="MR">Mauritania</option>
+				<option value="MU">Mauritius</option>
+				<option value="YT">Mayotte</option>
+				<option value="MX">Mexico</option>
+				<option value="FM">Micronesia, Federated States of</option>
+				<option value="MD">Moldova, Republic of</option>
+				<option value="MC">Monaco</option>
+				<option value="MN">Mongolia</option>
+				<option value="ME">Montenegro</option>
+				<option value="MS">Montserrat</option>
+				<option value="MA">Morocco</option>
+				<option value="MZ">Mozambique</option>
+				<option value="MM">Myanmar</option>
+				<option value="NA">Namibia</option>
+				<option value="NR">Nauru</option>
+				<option value="NP">Nepal</option>
+				<option value="NL">Netherlands</option>
+				<option value="NC">New Caledonia</option>
+				<option value="NZ">New Zealand</option>
+				<option value="NI">Nicaragua</option>
+				<option value="NE">Niger</option>
+				<option value="NG">Nigeria</option>
+				<option value="NU">Niue</option>
+				<option value="NF">Norfolk Island</option>
+				<option value="MP">Northern Mariana Islands</option>
+				<option value="NO">Norway</option>
+				<option value="OM">Oman</option>
+				<option value="PK">Pakistan</option>
+				<option value="PW">Palau</option>
+				<option value="PS">Palestinian Territory, Occupied</option>
+				<option value="PA">Panama</option>
+				<option value="PG">Papua New Guinea</option>
+				<option value="PY">Paraguay</option>
+				<option value="PE">Peru</option>
+				<option value="PH">Philippines</option>
+				<option value="PN">Pitcairn</option>
+				<option value="PL">Poland</option>
+				<option value="PT">Portugal</option>
+				<option value="PR">Puerto Rico</option>
+				<option value="QA">Qatar</option>
+				<option value="RE">Réunion</option>
+				<option value="RO">Romania</option>
+				<option value="RU">Russian Federation</option>
+				<option value="RW">Rwanda</option>
+				<option value="BL">Saint Barthélemy</option>
+				<option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+				<option value="KN">Saint Kitts and Nevis</option>
+				<option value="LC">Saint Lucia</option>
+				<option value="MF">Saint Martin (French part)</option>
+				<option value="PM">Saint Pierre and Miquelon</option>
+				<option value="VC">Saint Vincent and the Grenadines</option>
+				<option value="WS">Samoa</option>
+				<option value="SM">San Marino</option>
+				<option value="ST">Sao Tome and Principe</option>
+				<option value="SA">Saudi Arabia</option>
+				<option value="SN">Senegal</option>
+				<option value="RS">Serbia</option>
+				<option value="SC">Seychelles</option>
+				<option value="SL">Sierra Leone</option>
+				<option value="SG">Singapore</option>
+				<option value="SX">Sint Maarten (Dutch part)</option>
+				<option value="SK">Slovakia</option>
+				<option value="SI">Slovenia</option>
+				<option value="SB">Solomon Islands</option>
+				<option value="SO">Somalia</option>
+				<option value="ZA">South Africa</option>
+				<option value="GS">South Georgia and the South Sandwich Islands</option>
+				<option value="SS">South Sudan</option>
+				<option value="ES">Spain</option>
+				<option value="LK">Sri Lanka</option>
+				<option value="SD">Sudan</option>
+				<option value="SR">Suriname</option>
+				<option value="SJ">Svalbard and Jan Mayen</option>
+				<option value="SZ">Swaziland</option>
+				<option value="SE">Sweden</option>
+				<option value="CH">Switzerland</option>
+				<option value="SY">Syrian Arab Republic</option>
+				<option value="TW">Taiwan, Province of China</option>
+				<option value="TJ">Tajikistan</option>
+				<option value="TZ">Tanzania, United Republic of</option>
+				<option value="TH">Thailand</option>
+				<option value="TL">Timor-Leste</option>
+				<option value="TG">Togo</option>
+				<option value="TK">Tokelau</option>
+				<option value="TO">Tonga</option>
+				<option value="TT">Trinidad and Tobago</option>
+				<option value="TN">Tunisia</option>
+				<option value="TR">Turkey</option>
+				<option value="TM">Turkmenistan</option>
+				<option value="TC">Turks and Caicos Islands</option>
+				<option value="TV">Tuvalu</option>
+				<option value="UG">Uganda</option>
+				<option value="UA">Ukraine</option>
+				<option value="AE">United Arab Emirates</option>
+				<option value="GB">United Kingdom</option>
+				<option value="US">United States</option>
+				<option value="UM">United States Minor Outlying Islands</option>
+				<option value="UY">Uruguay</option>
+				<option value="UZ">Uzbekistan</option>
+				<option value="VU">Vanuatu</option>
+				<option value="VE">Venezuela, Bolivarian Republic of</option>
+				<option value="VN">Viet Nam</option>
+				<option value="VG">Virgin Islands, British</option>
+				<option value="VI">Virgin Islands, U.S.</option>
+				<option value="WF">Wallis and Futuna</option>
+				<option value="EH">Western Sahara</option>
+				<option value="YE">Yemen</option>
+				<option value="ZM">Zambia</option>
+				<option value="ZW">Zimbabwe</option>
+			</select>
+		  </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary">Solicitar demo</button>
+      </div>
+    </div>
+  </div>
+ 		</form> 
+</div>
+
+
+	<!-- Start preloading -->	
+	<div id="loading" class="loading-invisible">
+		<i class="pe-7s-refresh pe-spin pe-3x pe-va"></i><br />
+		<p>Espera</p>
+	</div>
+	<!-- End preloading -->
+
+	<!-- Start header -->
+	<header>
+		<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="img/logo.png" alt="" /></a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a id="GoToHome" href="#home" class="selected">Inicio</a></li>
+						<li><a id="GoToFeatures" href="#features">Caracteristicas</a></li>	
+						<li><a id="GoToDesc" href="#description">Descripción</a></li>
+						<!-- <li><a id="GoToGallery" href="#screenshot">Imagenes</a></li>
+						<li><a id="GoToPricing" href="#pricing">Precio</a></li> -->
+						<li><a id="GoToTestimoni" href="#testimoni">Testimonios</a></li>
+						<li><a id="GoToContact" href="#contact">Contacto</a></li>									
+					</ul>
+					<div class="navbar-right">
+						<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+							Solicitar un Demo
+						</a>
+					</div>	
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>	
+	</header>
+	<!-- End header -->
+	
+	<!-- End home -->
+	<section id="home" class="home-wrapper parallax student-bg">
+		<div class="home-contain">
+			<div class="container">
+				<div class="row text-center wow fadeInUp" data-wow-delay="0.03s">
+					<div class="col-md-10 col-md-offset-1">
+						<h3>Software de Administración<span>para centros Educativos</span></h3>						
+						<div class="home-slider">
+							<div class="slider-wrapper">
+								<div class="imac-device">
+									<ul class="slides">
+										<li>
+											<a href="#"><img src="img/slider/dashboard.png" alt="" /></a>
+										</li>
+										<li>
+											<a href="#"><img src="img/slider/biblioteca.png" alt="" /></a>
+										</li>
+										<li>
+											<a href="#"><img src="img/slider/mensajeria.png" alt="" /></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<img src="img/imac.png" class="img-responsive" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End home -->
+
+	<div class="clearfix"></div>
+	
+	<!-- Start features -->
+	<section id="features" class="contain desc-wrapp gray-bg">
+		<div class="container">
+			<div class="row text-center wow fadeInUp" data-wow-delay="0.4s">
+				<div class="col-md-8 col-md-offset-2">
+					<h3 class="heading"><span>Características</span>Software de administracion educativa</h3>
+				</div>
+			</div>
+			<div class="row wow fadeInDown" data-wow-delay="0.4s">
+				<div class="col-md-4 feature-box">
+					<i class="pe-7s-phone pe-feature"></i>
+					<h5>Responsive design</h5>
+					<p>
+					Cedoo esta diseñado de tal forma que pueda ser amigable con cualquier dispositivo moderno.
+					</p>
+				</div>
+				<div class="col-md-4 feature-box">
+					<i class="pe-7s-edit pe-feature"></i>
+					<h5>Integración a la medida</h5>
+					<p>
+					Todos los módulos del sistema son personalizados a la necesidad de su centro educativo, permitiendo una 
+					experiencia de uso incomparable.
+					</p>
+				</div>
+				<div class="col-md-4 feature-box">
+					<i class="pe-7s-graph1 pe-feature"></i>
+					<h5>Reportes Integrados</h5>
+					<p>
+					Reportes personalizados a la medida de cada centro educativo 
+					<br>Incluye tareas, estudiantes y matrículas en línea.					
+					</p>					
+				</div>
+				<div class="col-md-4 feature-box">
+					<i class="pe-7s-paper-plane pe-feature"></i>
+					<h5>Matrícula en linea</h5>
+					<p>
+					Con el software de registro en línea, montones de papeleo desaparecen y las preguntas se reducen drásticamente.
+
+					</p>
+					<a href="#">Mas información</a>
+				</div>
+				<div class="col-md-4 feature-box">
+					<i class="pe-7s-share pe-feature"></i>
+					<h5>Evaluación de personal</h5>
+					<p>
+					Podrá crear formularios para la evaluación de profesores u otros colegas en el centro educativo.
+					</p>					
+				</div>
+				<div class="col-md-4 feature-box">
+					<i class="pe-7s-paperclip pe-feature"></i>
+					<h5>Administrador de Archivos</h5>
+					<p>
+					Centralice todos los archivos de su centro educativo en un solo lugar, el administrador de archivos le permite mantener ordenada sus documentos.
+					</p>					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End features -->
+	
+	<div class="clearfix"></div>
+	
+	<!-- Start description -->
+	<section id="description" class="contain">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7 wow fadeInLeft" data-wow-delay="0.4s">
+					<img src="img/device.png" class="img-responsive" alt="" />
+				</div>
+				<div class="col-md-5 margintop40 wow fadeInRight" data-wow-delay="0.4s">
+					<div class="accordion clearfix" id="accordion1">
+						<div class="accordion-group">
+							<div class="accordion-heading">										
+								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+									<i class="pe-7s-angle-down"></i> Descripción General
+								</a>
+							</div>
+							<div id="collapse1" class="accordion-body collapse in">
+								<div class="accordion-inner">
+									<p>
+									<strong>Cedoo</strong> es una herramienta de gestión administrativa para la automatizacion de centros educativos, centralice toda la informacion de su centro educativo y tenga siempre el control de sus actividades principales.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-group">
+							<div class="accordion-heading">
+								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+									<i class="pe-7s-angle-down"></i> Adquirir el software
+								</a>
+							</div>
+							<div id="collapse2" class="accordion-body collapse">
+								<div class="accordion-inner">
+									<p>
+										<strong>Cedoo</strong> es un software personalizado a la medida de cada centro educativo. Contamos con diferentes módulos para la mayoria de sus necesidades.
+									</p>		
+									<p>
+										Para conocer mas sobre la suite y sus beneficios <a href="#">Solicita una demostración</a> que con gusto nuestros asesores educativos coordinarán a la brevedad.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-group">
+							<div class="accordion-heading">
+								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+									<i class="pe-7s-angle-down"></i> Soporte y Garantía
+								</a>
+							</div>
+							<div id="collapse3" class="accordion-body collapse">
+								<div class="accordion-inner">
+									<p>
+										<strong>Cedoo</strong> cuenta con un año de garantia sobre errores de desarrollo, asi como soporte técnico en sitio y servicio al cliente 24/7.
+									</p>
+									<p>	
+										<strong>Cedoo</strong> esta desarrollado con los mas altos estandares de progración a nivel internacional y cuenta con el respaldo de <a href="http://www.united-devs.com">United Software</a> empresa internacional con mas de 8 años de experiencia en desarrollo de software a la medida.
+									</p>
+								</div>
+							</div>
+						</div>									
+					</div>					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End description -->
+	
+	
+	<div class="clearfix"></div>
+		
+	
+	
+	<!-- Start download -->	
+	<section id="download">
+		<div class="download-wrapper">
+			<div class="container">
+				<div class="row wow fadeInUp" data-wow-delay="0.4s">
+					<div class="col-md-8 col-md-offset-2">
+						<h3>Ponte en contacto con nosotros</h3>
+						<p>Para obtener información de nuestros descuentos y promociones.</p>
+						<form>
+							<fieldset class="subscribe-form">
+								<input class="subscribe" type="text" placeholder="Correo Electrónico...">
+								<button class="subscribe-button" type="button">Suscribir</button>
+							</fieldset>	
+						</form>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End download -->
+	
+	<div class="clearfix"></div>
+	
+	<!-- Start testimoni -->
+	<section id="testimoni" class="contain">
+		<div class="container">
+			<div class="row text-center wow fadeInUp" data-wow-delay="0.4s">
+				<div class="col-md-12">
+					<h3 class="heading"><span>Testimonios</span>Lo que la gente opina de Cedoo</h3>
+				</div>
+			</div>
+		</div>
+		<div id="owl-testimoni" class="owl-carousel wow fadeInDown" data-wow-delay="0.4s">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="testimonial">
+							<blockquote>
+							Cedoo es una herramienta muy útil, permite comunicarse con los padres de familia de una forma muy sencilla.
+							</blockquote>
+							<span class="testimoni-sparator"></span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="testimoni-author">
+							<div class="author-info">
+								<h5>Mariano Castro</h5>
+								<p><a href="#">Educador</a></p>
+							</div>
+							<img src="img/testimoni/avatar1.png" alt="" />
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="testimonial">
+							<blockquote>
+							Con Cedoo el control de las tareas administrativas es muy sencillo, es una excelente solución. 
+							</blockquote>
+							<span class="testimoni-sparator"></span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="testimoni-author">
+							<div class="author-info">
+								<h5>Herminio Ponce</h5>
+								<p><a href="#">Director Centro Educativo</a></p>
+							</div>
+							<img src="img/testimoni/avatar2.png" alt="" />
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="testimonial">
+							<blockquote>
+							La comunicación con la escuela de mi hijo ha sido maravilloso, asi como poder acceder a las notas y ver sus tareas en línea!
+							</blockquote>
+							<span class="testimoni-sparator"></span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="testimoni-author">
+							<div class="author-info">
+								<h5>Rafael Rodriguez</h5>
+								<p><a href="#">Padre de Familia</a></p>
+							</div>
+							<img src="img/testimoni/avatar3.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+				
+		</div>
+	</section>
+	<!-- End testimoni -->
+	
+	<div class="clearfix"></div>	
+		
+	<!-- Start contact -->
+	<section id="contact">
+		<div class="contact-contain">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-12 wow fadeInUp" data-wow-delay="0.4s">
+						<h3 class="heading"><span>Contáctenos</span>Conocé mas sobre nosotros</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 wow fadeInDown" data-wow-delay="0.4s">
+						<form id="contactform" action="contact/contact.php" method="post" class="validateform" name="leaveContact">
+							<div class="clearfix"></div>
+							<div id="sendmessage">
+								<div class="alert alert-info marginbot35">
+									<button type="button" class="close" data-dismiss="alert">&times;</button>
+									Mensaje enviado, en breve nos pondremos en contacto.
+								</div>							
+							</div>								
+							<ul class="listForm">
+								<li>
+									<i class="pe-7s-users"></i>
+									<input class="form-control input-name" type="text" name="name" data-rule="required" data-msg="Campo Requerido" placeholder="Ingresa tu nombre completo" />
+									<div class="validation"></div>
+								</li>
+								<li>
+									<i class="pe-7s-mail"></i>
+									<input class="form-control input-email" type="text" name="email" data-rule="email" data-msg="Ingrese un correo electrónico válido" placeholder="Ingresa tu Email" />	
+									<div class="validation"></div>
+								</li>
+								<li class="push">
+									<i class="pe-7s-paper-plane"></i>
+									<textarea class="form-control input-message" rows="6" name="message" data-rule="required" data-msg="El mensaje no puede estar vacio" placeholder="Esbribenos un mensaje!"></textarea>
+									<div class="validation"></div>
+								</li>
+								<li class="push text-center">
+									<input type="submit" value="Enviar Mensaje" class="btn btn-primary btn-lg" name="Submit" />
+								</li>
+							</ul>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End contact -->
+	
+	<div class="clearfix"></div>
+		
+	<!-- Start footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="social-network">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-skype"></i></a>
+					</div>
+					<p>2016 &copy; Copyright <a href="http://united-devs.com/">United Software</a> Todos los derechos reservados.</p>
+				</div>
+			</div>
+		</div>	
+	</footer>
+	<!-- End footer -->	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-easing-1.3.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+	
+	<script type="text/javascript">
+		  document.getElementById("loading").className = "loading-visible";
+		  var hideDiv = function(){document.getElementById("loading").className = "loading-invisible";};
+		  var oldLoad = window.onload;
+		  var newLoad = oldLoad ? function(){hideDiv.call(this);oldLoad.call(this);} : hideDiv;
+		  window.onload = newLoad;
+
+		 
+	</script>
+	<!-- End preloading -->
+		
+	<!-- Fixed navigation -->
+	<script src="js/navigation/waypoints.min.js"></script>
+	<script src="js/navigation/jquery.smooth-scroll.js"></script>		
+	<script src="js/navigation/navbar.js"></script>	
+	
+	<!-- Wow -->
+	<script src="js/wow/wow.min.js"></script>
+	<script src="js/wow/setting.js"></script>
+	
+	<!-- Parallax -->
+	<script src="js/parallax/jquery.parallax-1.1.3.js"></script>	
+	<script src="js/parallax/setting.js"></script>
+	
+	<!-- flexslider -->
+	<script src="js/flexslider/jquery.flexslider.js"></script>
+	<script src="js/flexslider/setting.js"></script>
+
+	<!-- prettyPhoto -->
+	<script src="js/prettyPhoto/jquery.prettyPhoto.js"></script>	
+	<script src="js/prettyPhoto/setting.js"></script>
+	
+	<!-- counters -->
+	<script src="js/counters/jquery.appear.js"></script>
+	<script src="js/counters/stellar.js"></script>
+	<script src="js/counters/setting.js"></script>
+
+	<!-- Owl carousel -->
+	<script src="js/owlcarousel/owl.carousel.js"></script>
+    <script src="js/owlcarousel/setting.js"></script>
+	
+	<!-- Totop -->
+	<script src="js/totop/jquery.ui.totop.js"></script>	
+	<script src="js/totop/setting.js"></script>
+	
+		
+	<!-- Contact validation -->
+	<script src="js/validation.js"></script>
+	
+	<!-- Customn javascript -->
+	<script src="js/custom.js"></script>
+	
+  </body>
+</html>
