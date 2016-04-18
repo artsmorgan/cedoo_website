@@ -17,4 +17,11 @@
 				$(this).find('.logo-hover').stop().fadeTo(900, 0);
 				$(this).find('.client-logo').stop().fadeTo(900, 1);
 	});	
+
+
+	$('#moreInfoModal').on('click',function(event){
+		$('#moreInfoModal').modal('show');		
+	})
+
+
 })(jQuery);

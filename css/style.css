@@ -763,7 +763,13 @@ Heading
 #contact .heading{
 	border-bottom:1px solid #fff;
 	color:#fff;
+    margin-bottom: 10px;
 }
+
+.modal-padding{
+	padding: 25px;
+}
+
 
 /*
 Pixeden icon setting
@@ -1080,6 +1086,11 @@ Custom right spacer
 
 .marginright20{
 	margin-right:20px;
+}
+
+.fancy-send{
+	padding: 25px;
+	text-align: center;
 }
 
 /*
